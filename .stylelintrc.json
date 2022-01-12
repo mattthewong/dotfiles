@@ -1,0 +1,58 @@
+{
+    "extends": ["stylelint-config-airbnb"],
+    "rules": {
+        "declaration-property-value-blacklist": {
+            "/^border/": []
+        },
+        "string-quotes": [
+            "single",
+            {
+                "severity": "error"
+            }
+        ],
+        "max-empty-lines": [
+            3,
+            {
+                "severity": "error"
+            }
+        ],
+        "indentation": [
+            4,
+            {
+                "severity": "error"
+            }
+        ],
+        "max-nesting-depth": [
+            3,
+            {
+                "severity": "error"
+            }
+        ],
+        "rule-empty-line-before": [
+            "always",
+            {
+                "ignore": ["after-comment", "first-nested", "inside-block"]
+            }
+        ],
+        "at-rule-empty-line-before": [
+            "always",
+            {
+                "ignore": [
+                    "after-comment",
+                    "first-nested",
+                    "inside-block",
+                    "blockless-after-same-name-blockless",
+                    "blockless-after-blockless"
+                ]
+            }
+        ],
+        "order/order": ["custom-properties", "declarations"],
+        "number-leading-zero": [
+            "always",
+            {
+                "severity": "error"
+            }
+        ],
+        "selector-max-id": [1]
+    }
+}
