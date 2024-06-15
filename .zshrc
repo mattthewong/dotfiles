@@ -92,7 +92,7 @@ plugins=(
    bundler
    dotenv
    fzf
-   osx
+   macos
    zsh-autosuggestions
    docker
    terraform
@@ -128,3 +128,7 @@ source /Users/mattthewong/go/src/github.com/zsh-syntax-highlighting/zsh-syntax-h
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source /Users/mattthewong/.docker/init-zsh.sh || true # Added by Docker Desktop
+export PATH=$PATH:$(go env GOPATH)/bin
+eval "$(goenv init -)"
+export PATH="/Users/mattthewong/.goenv/shims:$GOENV_ROOT/bin:$PATH"

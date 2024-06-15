@@ -81,7 +81,7 @@ function gpusho {
    git push origin master;
 }
 
-function gpull() {
+function gpullm() {
    git pull origin main;
 }
 
